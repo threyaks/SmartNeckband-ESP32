@@ -1,5 +1,4 @@
-# Smart Neckband ESP32
-# Smart Sleep Therapy Device
+# AI-Driven Vibro-Thermal Neckpad for Personalized Insomnia Therapy Using LSTM-Based Sleep Stage Detection
 
 A wearable device designed to improve sleep quality for insomnia patients by combining real-time physiological monitoring, AI-based sleep stage prediction, and adaptive therapy using vibration and thermal stimulation.
 
