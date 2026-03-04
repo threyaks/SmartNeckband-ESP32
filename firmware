@@ -1,1 +1,83 @@
+/**
+ * Smart Sleep Therapy Device - ESP32 Bluetooth Control
+ * 
+ * Controls vibration motors and graphene heating element via Bluetooth commands.
+ * Compatible with mobile app for insomnia therapy management.
+ * 
+ * Author: Threya Saravanan
+ * Year: 2026
+ */
 
+#include "BluetoothSerial.h"
+
+// Initialize Bluetooth Serial
+BluetoothSerial SerialBT;
+
+// GPIO Pins
+const int vibrationPin1 = 23;     // Vibration Motor 1
+const int vibrationPin2 = 22;     // Vibration Motor 2
+const int heatingRelayPin = 21;   // Graphene Heating Element Relay
+
+void setup() {
+  // Start Serial for debugging
+  Serial.begin(115200);
+
+  // Start Bluetooth with device name
+  SerialBT.begin("SmartSleep_Device");
+  Serial.println("Bluetooth Started! Waiting for commands...");
+
+  // Configure pins as OUTPUT
+  pinMode(vibrationPin1, OUTPUT);
+  pinMode(vibrationPin2, OUTPUT);
+  pinMode(heatingRelayPin, OUTPUT);
+
+  // Initialize all outputs to LOW
+  digitalWrite(vibrationPin1, LOW);
+  digitalWrite(vibrationPin2, LOW);
+  digitalWrite(heatingRelayPin, LOW);
+}
+
+void loop() {
+  // Check if Bluetooth command is received
+  if (SerialBT.available()) {
+    char command = SerialBT.read();
+    Serial.print("Received Command: ");
+    Serial.println(command);
+
+    switch (command) {
+      // Vibration Motor 1 Control
+      case 'A':
+        digitalWrite(vibrationPin1, HIGH);
+        Serial.println("Vibration Motor 1 ON");
+        break;
+      case 'B':
+        digitalWrite(vibrationPin1, LOW);
+        Serial.println("Vibration Motor 1 OFF");
+        break;
+
+      // Vibration Motor 2 Control
+      case 'C':
+        digitalWrite(vibrationPin2, HIGH);
+        Serial.println("Vibration Motor 2 ON");
+        break;
+      case 'D':
+        digitalWrite(vibrationPin2, LOW);
+        Serial.println("Vibration Motor 2 OFF");
+        break;
+
+      // Graphene Heating Control
+      case 'E':
+        digitalWrite(heatingRelayPin, HIGH);
+        Serial.println("Graphene Heating ON");
+        break;
+      case 'F':
+        digitalWrite(heatingRelayPin, LOW);
+        Serial.println("Graphene Heating OFF");
+        break;
+
+      default:
+        Serial.println("Invalid Command Received!");
+        break;
+    }
+  }
+}
