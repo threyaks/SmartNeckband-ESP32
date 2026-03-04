@@ -1,60 +1,71 @@
 # Smart Neckband ESP32
-
 # Smart Sleep Therapy Device
 
-A wearable device designed to improve sleep quality for insomnia patients using real-time physiological monitoring, AI-based sleep stage prediction, and adaptive therapy through vibration and thermal stimulation.
+A wearable device designed to improve sleep quality for insomnia patients by combining real-time physiological monitoring, AI-based sleep stage prediction, and adaptive therapy using vibration and thermal stimulation.
 
 ---
 
-## Features
+## 🌟 Key Features
 
 - **Real-time Physiological Monitoring**
-  - Collects heart rate, temperature, and movement data using onboard sensors.
-
-- **LSTM-Based Sleep Stage Prediction**
-  - Predicts sleep stages and detects restlessness for personalized interventions.
+  - Tracks heart rate, temperature, and movement continuously.
+  - Detects sleep disturbances and restlessness.
+  
+- **AI-Powered Sleep Stage Prediction**
+  - Uses an **LSTM (Long Short-Term Memory) model** to predict sleep stages.
+  - Identifies patterns to provide personalized therapy.
 
 - **Adaptive Therapy Control**
-  - Adjusts **vibration motor** and **graphene heating element** based on user sleep patterns.
+  - **Vibration Motor**: Gentle tactile stimulation to improve sleep comfort.
+  - **Graphene Heating Element**: Controlled thermal therapy for relaxation.
+  - Automatically adjusts intensity based on user’s sleep stage and restlessness.
 
-- **Learning Over Time**
-  - Device adapts therapy strategies over multiple nights for optimal results.
+- **Progressive Learning**
+  - Learns user patterns over multiple nights.
+  - Optimizes therapy strategies dynamically.
 
 - **Mobile App Integration**
-  - Provides analytics, sleep summaries, and personalized recommendations.
-  - Allows users to choose therapy modes ( heating, or vibration intensity).
+  - Provides detailed analytics and sleep summaries.
+  - Offers **personalized recommendations** and therapy mode selection:
+    - Cooling mode
+    - Heating mode
+    - Vibration intensity
 
 ---
 
-## Workflow
+## 🔧 Workflow
 
-1. Sensors collect real-time physiological data.  
-2. LSTM predicts sleep stages and detects restlessness.  
-3. Adaptive control module adjusts vibration and thermal therapy.  
-4. Device learns and improves therapy over multiple nights.  
-5. Mobile app provides analytics and personalized recommendations.
+- **Step 1:** Sensors collect real-time physiological data.  
+- **Step 2:** LSTM predicts sleep stages and detects restlessness.  
+- **Step 3:** Adaptive control module adjusts vibration and thermal therapy.  
+- **Step 4:** Device learns and improves therapy over multiple nights.  
+- **Step 5:** Mobile app displays analytics and provides personalized recommendations.
 
 ---
 
-## Hardware Components
+## 🛠 Hardware Components
 
 - Microcontroller: **ESP32 **  
 - **Vibration Motor** – for gentle tactile stimulation  
 - **Graphene Heating Element** – for controlled thermal therapy  
-- Sensors for monitoring heart rate, temperature, and movement
+- Sensors:
+  - Heart rate sensor  
+  - Temperature sensor  
+  - Motion/accelerometer sensor  
 
 ---
 
-## Software Components
+## 💻 Software Components
 
-- **Arduino / ESP32 Firmware**  
-- **Python / TensorFlow / PyTorch** for LSTM sleep stage prediction  
-- **Flutter Mobile App** for analytics and user interface
+- Firmware: **Arduino / ESP32**  
+- AI Model: **Python / TensorFlow / PyTorch** for LSTM-based sleep prediction  
+- Mobile App: **Flutter** for cross-platform analytics and control  
 
 ---
 
-## Installation & Usage
+## 🚀 Installation & Usage
 
-1. Clone the repository:
+1. Clone the repository:  
    ```bash
    git clone https://github.com/username/smart-sleep-therapy.git
+
