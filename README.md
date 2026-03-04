@@ -1,26 +1,26 @@
 # SmartNeckband-ESP32
-📌 Project Overview
+📌 __Project Overview__
 
-The AI-Based Smart Therapeutic Neckband is a wearable assistive device designed to support individuals experiencing insomnia.
+#The AI-Based Smart Therapeutic Neckband is a wearable assistive device designed to support individuals experiencing insomnia.
 
-The system integrates:
+##The system integrates:
 
-🔥 Controlled low-intensity graphene heat therapy
+###🔥 Controlled low-intensity graphene heat therapy
 
-💆 Gentle vibration stimulation
+###💆 Gentle vibration stimulation
 
-📡 Bluetooth-enabled embedded control (ESP32)
+###📡 Bluetooth-enabled embedded control (ESP32)
 
-🧠 LSTM-based sleep pattern analysis
+###🧠 LSTM-based sleep pattern analysis
 
-🛡 Embedded safety and automatic shutdown logic
+###🛡 Embedded safety and automatic shutdown logic
 
-Objective
+__Objective__
 
-To provide adaptive, non-pharmacological sleep assistance by:
+##To provide adaptive, non-pharmacological sleep assistance by:
 
-Promoting muscle relaxation through heat therapy
+##Promoting muscle relaxation through heat therapy
 
-Reducing neck tension using vibration stimulation
+##Reducing neck tension using vibration stimulation
 
-Adjusting therapy duration using AI-based sleep pattern analysis
+##Adjusting therapy duration using AI-based sleep pattern analysis
