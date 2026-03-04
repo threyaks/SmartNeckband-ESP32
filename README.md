@@ -1,58 +1,60 @@
 # Smart Neckband ESP32
 
-The **AI-Based Smart Therapeutic Neckband** is a wearable device designed to support individuals experiencing insomnia. It provides adaptive sleep assistance using heat therapy, gentle vibrations, and AI-based monitoring.
+# Smart Sleep Therapy Device
+
+A wearable device designed to improve sleep quality for insomnia patients using real-time physiological monitoring, AI-based sleep stage prediction, and adaptive therapy through vibration and thermal stimulation.
 
 ---
 
-## 🎯 Features
+## Features
 
-- **Controlled low-intensity graphene heat therapy**
-- **Gentle vibration stimulation**
-- **Bluetooth-enabled embedded control (ESP32)**
-- **LSTM-based sleep pattern analysis**
-- **Embedded safety and automatic shutdown logic**
+- **Real-time Physiological Monitoring**
+  - Collects heart rate, temperature, and movement data using onboard sensors.
 
----
+- **LSTM-Based Sleep Stage Prediction**
+  - Predicts sleep stages and detects restlessness for personalized interventions.
 
-## 🛠 Hardware Used
+- **Adaptive Therapy Control**
+  - Adjusts **vibration motor** and **graphene heating element** based on user sleep patterns.
 
-- **ESP32 Microcontroller**
-- **Graphene heating film**
-- **Vibration motor**
-- **Silicone insulation layer**
-- **GELID cold pack for cool mode**
+- **Learning Over Time**
+  - Device adapts therapy strategies over multiple nights for optimal results.
 
----
-
-## 🎯 Objective
-
-This project aims to provide **adaptive, non-pharmacological sleep assistance** by:
-
-- Promoting **muscle relaxation** through heat therapy  
-- Reducing **neck tension** using vibration stimulation  
-- Adjusting **therapy duration** using AI-based sleep pattern analysis  
+- **Mobile App Integration**
+  - Provides analytics, sleep summaries, and personalized recommendations.
+  - Allows users to choose therapy modes ( heating, or vibration intensity).
 
 ---
 
-## 📱 Mobile App
+## Workflow
 
-- **Flutter-based control interface**
-- Switch between **Heat Mode** and **Cool Mode**
-- Monitor therapy **duration and intensity**
-- Real-time **sleep pattern feedback**  
-
----
-
-## ⚡ How it Works
-
-1. Select **Heat Mode** or **Cool Mode** on the app  
-2. Graphene film heats up for muscle relaxation  
-3. Vibration motor applies gentle stimulation  
-4. LSTM algorithm monitors sleep pattern  
-5. Therapy automatically shuts down if unsafe  
+1. Sensors collect real-time physiological data.  
+2. LSTM predicts sleep stages and detects restlessness.  
+3. Adaptive control module adjusts vibration and thermal therapy.  
+4. Device learns and improves therapy over multiple nights.  
+5. Mobile app provides analytics and personalized recommendations.
 
 ---
 
-## 🔗 License
+## Hardware Components
 
-This project is licensed under **MIT License**.
+- Microcontroller: **ESP32 **  
+- **Vibration Motor** – for gentle tactile stimulation  
+- **Graphene Heating Element** – for controlled thermal therapy  
+- Sensors for monitoring heart rate, temperature, and movement
+
+---
+
+## Software Components
+
+- **Arduino / ESP32 Firmware**  
+- **Python / TensorFlow / PyTorch** for LSTM sleep stage prediction  
+- **Flutter Mobile App** for analytics and user interface
+
+---
+
+## Installation & Usage
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/smart-sleep-therapy.git
